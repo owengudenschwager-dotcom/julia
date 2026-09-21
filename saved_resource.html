@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="es" data-theme="dark" style="color-scheme: dark;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.BF1j0KPr.js","sample":"sample.C7KQQdQj.js","self":"artifact.Kiow93e4.js","user":"user.CCh6oTS_.js"},"transforms":"_transforms.DeQ5QuJ7.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.CqNtBrkk.js"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script><script>(function(){"use strict";function sr(t){return t==="cookie"||t==="query"?t:void 0}var Kn=3e5;function ir(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var lr=["light","dark","system"],cr=/^[A-Za-z0-9_-]{1,64}$/,St=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ur=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function fr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||ur.has(e)}var At="data-ldx-props";function dr(t,e){if(e.toLowerCase()===At)return!0;const r=t.getAttribute(At);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var Gn="http://www.w3.org/1999/xhtml",hr="http://www.w3.org/2000/svg",pr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),mr=new Set(["script","style"]);function vr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!pr.has(e):t.namespaceURI===hr?!mr.has(e):!1}function Ve(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function _r(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ve(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ve(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function yr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=_r(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const O=r.data,w=t.ownerDocument.getSelection?.()??null,b=w!==null&&w.rangeCount>0&&(w.anchorNode===r||w.focusNode===r)?{anchor:w.anchorNode,anchorOffset:w.anchorOffset,focus:w.focusNode,focusOffset:w.focusOffset}:null;let m=-1,R=-1;for(let h=0;h<O.length&&h<e.length;h++){const p=O.charCodeAt(h),D=e.charCodeAt(h);p!==D&&Ve(p,D)&&(m<0&&(m=h),R=h)}const M=m>=0;if(M&&r.replaceData(m,R-m+1,e.slice(m,R+1)),M&&b!==null&&b.anchor!==null&&b.focus!==null)try{w.setBaseAndExtent(b.anchor,b.anchorOffset,b.focus,b.focusOffset)}catch{}}var gr=new Set(["html","head","body","frameset"]);function wr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&gr.has(t.localName)}function br(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!cr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!St.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!St.test(r))return!1}return!0}function Er(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Sr(t){return t===null||typeof t!="object"?!1:Er(t.__frame_patch,br)}function Ar(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function kr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&lr.includes(r)}var Lr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Or=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Mr(t){return typeof t=="string"&&Or.includes(t)?t:"other"}var Pr=Object.freeze({until:null,now:!1}),Nr="__claude_hot",Cr="__claude_hot_in",jr=/^__claude_hot(?:_in)?(?::|$)/,kt=/^[0-9a-z]{1,32}$/,Xe=t=>t===void 0?Nr:"__claude_hot:"+t,be=t=>t===void 0?Cr:"__claude_hot_in:"+t;function Fr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&jr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ir(t){let e=null;try{e=q(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!kt.test(e.k)?null:le(e.g)?{k:e.k,g:e.g}:{k:e.k}}var zn=262144,Dr=3e3,xr=5e3,Rt=/^[a-z0-9._:-]{1,64}$/,Hr=["none","hot-restart","hard-reload"],qr=["asset","doc","added","removed"],Br=1500,Ur=/^[0-9a-f]{64}$/;function q(t){return t!==null&&typeof t=="object"?t:null}function le(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Tt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Kr(t){return t===void 0||typeof t=="string"&&Rt.test(t)}function Lt(t){const e=q(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function Ye(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Tt(e.seq)&&typeof e.handoff=="string"&&Lr.includes(e.handoff)&&Kr(e.note)}function Gr(t){const e=q(t);return e!==null&&le(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||Ye(e.from))}function zr(t){const e=q(t);return e!==null&&e.kv===1&&le(e.gen)&&Ye(e.from)&&Object.hasOwn(e,"data")}function $r(t){const e=q(t);return e!==null&&e.__frame_hot_snapshot===!0&&le(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Lt(e.deadline))&&Tt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Wr(t){const e=q(t);return e!==null&&e.__frame_hot_start===!0&&le(e.gen)&&Ye(e.from)}function Vr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ot(t){return q(t)!==null&&!Array.isArray(t)}function Xr(t){const e=q(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Vr(e.ver)&&(e.grant===void 0||Ot(e.grant))&&(e.budgets===void 0||Ot(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||le(e.brokerGen))}function Yr(t){const e=q(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||le(e.brokerGen))}function Mt(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Pt(t){if(t==null||typeof t=="string")return!0;const e=q(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Jr(t){const e=q(t);return e!==null&&typeof e.path=="string"&&qr.includes(e.kind)&&Pt(e.from)&&Pt(e.to)}function Zr(t){return t===null?null:Object.freeze(t.filter(Jr))}function Qr(t){const e=q(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Mt(e.from)&&Mt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Hr.includes(e.required)&&Lt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Ur.test(e.preflight))}var ce=/^[\w.-]+\.js$/;function en(t,e,r){return r?"inert":typeof e=="string"&&ce.test(e)?t?[e]:"inert":t?"inert":"framed"}var Nt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Ct(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Xe(e?.k),a=be(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{Fr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);zr(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function jt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var tn=/^[^/\\?#]{1,128}$/,Ft=t=>tn.test(t)&&t!=="."&&t!=="..";function It(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ft(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var Fe="{}";function Ee(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Dt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function xt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function rn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),O=new TextEncoder;let w=null,b=null;try{w=history,b=w.replaceState.bind(w)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let R=jt(),M=null;try{M=sessionStorage}catch{}const h={storage:M,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:R,key:n?.k};let p=n?.k;const D=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let _=e?.data??{},C=Ee(e?.from),P=e?.gen??0,x=e!==null,W=!1,J=!1,X=null,Te=!1;const Le=new AbortController;let Oe=null,H=null,me=null,qe=!1,oe=()=>{};const l=new Promise(o=>{oe=o});let v=!1,E=!1,I=!1,j,L=null,K=!1,Me=!1,Z=!1,Be=!1,ae=!1,de=!1;const Pe=o=>{for(const u of[Xe(o),be(o)])try{M?.removeItem(u)}catch{}},V=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},se=()=>ae||=Z&&(H===null||Be),B=()=>{const o={__frame_hot:!0,ready:H!==null,accept:me!==null,demand:!0};de=!ae,de&&(o.booting=!0),v&&(o.readData=!0),I&&(o.threw=!0),L?.assess&&(o.preflight=!0),V(o,X)};let ve=!1,Ne=!1,ie=!1,Ce=!1;const i=()=>{ve||!Te||ie||(ve=!0,V({__frame_reveal_hold:!0},"*"))},g=()=>new Promise(o=>{let u,f=0;const S=F=>{if(u===void 0)u=F;else if(F!==u||++f>=8){o();return}try{D(S)}catch{o()}};try{D(S)}catch{o()}}),y=()=>{ie=!0,V({__frame_reveal_ready:!0},"*")},k=o=>{Ne||(Ne=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=L?.settle?.()??null}catch{}return(f===null?g():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(g)).then(y)}))},Q=()=>{if(Ce||!ie)return;Ce=!0;const o=()=>{try{L?.afterReveal?.()}catch{}};o(),g().then(()=>{o(),y()})},G=(o=!1)=>{if(qe||H===null||!x||!J)return;qe=!0;const u=H,f=_;c(()=>{let S;try{S=u(f)}catch(U){throw oe(!1),U}let F=!1;try{F=typeof S?.then=="function"}catch{}if(!F){oe(!0);return}Promise.resolve(S).then(()=>oe(!0),U=>{oe(!1),c(()=>{throw U})})}),k(o?l:r.dcl.then(()=>l))},ee=o=>typeof o=="string"&&Rt.test(o)?o:void 0,dt=o=>{const u={__frame_hot_restart:!0},f=ee(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),V(u,X)},Zt=Object.freeze({get data(){return J||(E=!0),!x&&!v&&(v=!0,J&&B()),_},get from(){return C},get gen(){return P},signal:Le.signal,snapshot(o){typeof o=="function"&&(Oe=o)},ready(o){typeof o!="function"||H!==null||(H=o,i(),B(),W&&V({__frame_hot_ready:!0,gen:P},X),G())},accept(o){typeof o=="function"&&(me=o,B())},restart(o){const u={note:o?.note,required:o?.required};if(J){dt(u);return}const f=j;j={note:ee(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let Ue=null,Qt=()=>{};const Fn=new Promise(o=>{Qt=o});let In=null;const er=()=>In??=r.dcl.then(()=>{let o=!1;try{o=Ue!==null&&Ue.expect()}catch{}if(!o)return;const u=Ue.maxMs;return new Promise(f=>{Fn.then(f),a(f,u)})}),tr=()=>{if(!K||Me||L===null)return;Me=!0;const o=L;er().then(()=>{try{ie||o.afterStart(xt(e),!1)}catch{}})},rr=o=>{e!==null&&E&&(v=!0),_={},C=null,P=0;try{M?.removeItem(be(n?.k))}catch{}e!==null&&!o&&k(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{K=!0,k(er().then(()=>H!==null?l:void 0)),tr()};try{addEventListener("error",()=>{I||H!==null||(I=!0,B())})}catch{}const nr=()=>{a(()=>{!ae&&se()&&de&&B()},0)};try{Z=document.readyState==="complete",Z||addEventListener("load",()=>{Z=!0,nr()},{once:!0})}catch{Z=!0}se(),l.then(()=>{Be=!0,nr()});let he=-1,ht,pt,je=!0,mt=!1,vt,Ke=null;const _t=o=>{const u=Ke===null;Ke=je&&o[0]!=="withheld"?o:["withheld",o[1],Fe];let f=o[0];if(je&&f!=="withheld"){const F={ver:R,handoff:f};ht!==void 0&&(F.seq=ht),pt!==void 0&&(F.note=pt);try{if(M===null)throw new Error("no storage");M.setItem(Xe(p),'{"kv":1,"gen":'+he+',"from":'+JSON.stringify(F)+(vt!==void 0?',"k":'+JSON.stringify(vt):"")+',"data":'+(f==="ok"?o[2]:Fe)+"}")}catch{f="unavailable"}}else{f="withheld",Pe(p);try{L?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:he,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),V(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},_e=o=>{try{return Mr(o?.name)}catch{return"other"}},ye=(o,u,f=0)=>_t(u===void 0?[o,f,Fe]:[o,f,Fe,_e(u)]),xn=o=>{if(o.gen<=he)return;const u=he>=0;if(he=o.gen,ht=o.seq,pt=ee(o.note),typeof o.key=="string"&&kt.test(o.key)&&o.key!==p&&(Pe(p),p=o.key),je&&=o.handoff!==!1,u){Ke!==null?_t(Ke):mt&&V({__frame_hot_held:!0,gen:he},X);return}Le.abort();const f=Object.freeze({handoff:je,timeoutMs:o.timeoutMs,deadline:o.deadline??Pr}),S=Oe,F=()=>{if(je)try{vt=L?.capture()}catch{}if(S===null){ye("empty");return}let T=!1;const z=a(()=>{T||(T=!0,ye("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(ge=>{if(T)return;T=!0,s(z);let re;try{re=JSON.stringify(ge)}catch(yt){ye("unclonable",yt);return}if(typeof re!="string"){ye("unclonable");return}let ne=re.length;try{ne=O.encode(re).length}catch{}if(ne>262144){ye("oversize",void 0,ne);return}_t(["ok",ne,re])},ge=>{T||(T=!0,s(z),ye("snapshot_error",ge))})};let U=null;try{U=L?.holdForIme()??null}catch{}if(U===null)F();else{mt=!0,V({__frame_hot_held:!0,gen:he},X);const T=()=>{mt=!1,F()};U.then(T,T)}},Hn=o=>{if(!W||x||H===null||o.gen!==P)return;let u=null;try{u=Ct(M,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{M?.removeItem(be(n?.k))}catch{}}_=u?.data??{},C=Dt(Ee(u?.from??o.from),Ee(o.from)),u!==null&&(P=u.gen),x=!0,W=!1;const f=xt(u);l.then(S=>{try{S&&L?.afterStart(f,!0)}catch{}}),G(!0)};let Ge=0;const qn=o=>{const u=me;if(u===null||o.id<=Ge)return;Ge=o.id;const f=L?.assess;if(o.preflight===void 0||f===void 0){or(o,u);return}let S=!1;const F=z=>{S||(S=!0,s(T),o.id===Ge&&or(o,u,z))},U=()=>F(f.timeout(o)),T=a(U,Br+100);f.run(o,window).then(F,U)},or=(o,u,f)=>{let S,F=!1,U=!1,T,z,ge=null;const re=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ne=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},yt=()=>{if(!re("adopt")||o.id!==Ge)return;const A=o.to.ver;if(ze.required!=="none"){ne(`u.adopt() needs required 'none', it is '${ze.required}'`);return}if(!Ft(A)){ne("u.adopt() cannot address this version");return}if(!R||A===R)return;const te=R,Y=h.entry;let $e="",wt,we=null,We;try{$e=location.href,wt=w.state,we=It($e,te,A),we!==null&&(b(wt,"",we),location.pathname.startsWith("/_f/"+A+"/")?we=location.href:We="navigate event canceled")}catch(Et){We=_e(Et)}if(We!==void 0){z="adopt_failed",ne(`adopt_failed ${We}; URL not changed`);return}we===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",R=h.ver=A;try{h.entry=It(Y,te,A)??Y}catch{}const bt=we;ge=()=>{if(R===A){if(bt!==null)try{if(location.href!==bt)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(b(wt,"",$e),location.href!==$e){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(Et){m(`claude.hot: adopt_revert_failed ${_e(Et)} - URL still at the new version`);return}R=h.ver=te,h.entry=Y,bt===null&&(z=void 0)}}},ze=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Zr(o.changed),required:o.required,deadline:o.deadline,adopt:yt,defer(){return re("defer")&&ze.deadline.now&&ne("u.defer() past the deadline"),Nt},restart(A){return re("restart"),T==="restart"&&!U&&(S??=ee(A?.note),F||=A?.required==="hard-reload"),Nt},...f?.update}),Bn=(A,te)=>{U=!0,A==="threw"?(ge?.(),S??=_e(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Y={__frame_hot_verdict:!0,id:o.id};Y.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Y.verdict==="restart"&&(F&&(Y.required="hard-reload"),S!==void 0&&(Y.note=S)),z!==void 0&&(Y.verdict==="applied"||z!=="adopted")&&(Y.adopt=z),V(Object.assign(Y,f?.verdict),X)};let ar=!1;const gt=(A,te)=>ar?!1:(ar=!0,s(Un),Bn(A,te),!0),Un=a(()=>gt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(ze)).then(()=>gt("settled"),A=>{!gt("threw",A)&&T==="adopt"&&dt({note:_e(A).toLowerCase()}),m("claude.hot: accept",_e(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Zt,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Zt,boot:h,afterConnect(){Te=!0,(e!==null||H!==null)&&i()},onInit(o,u){X=u,J=!0;const f=Gr(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(x=!0,C=Dt(C,Ee(f.from)),Dn()):(W=f?.phase==="pending",rr(W),x=!W,P=f?.gen??0,C=Ee(f?.from)),B(),de&&a(()=>{ae||(ae=!0,B())},xr),W&&H!==null&&V({__frame_hot_ready:!0,gen:P},u),j!==void 0&&(dt(j),j=void 0),G()},onNoInit(){J=!0,rr(!1),x=!0,G()},onShell(o){return o?.__frame_revealed===!0?(Q(),!1):$r(o)?(xn(o),!0):Wr(o)?(Hn(o),!0):Qr(o)?(qn(o),!0):!1},attachExtras(o){L=o,tr(),o.assess&&B()},inSlot:()=>be(p),hydration(o,u){Ue??={expect:o,maxMs:u}},hydrated(){Qt()},carried(){return x?_:{}},presented:()=>ie}}var $n="frame_ldx_runtime",nn="frame_ldx_build",Wn="script#an-form",on=256;function Ht(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=on&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Je(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var Ze;function an(){if(Ze)return Ze;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};Ze=t;const e=window.HTMLMediaElement?.prototype;e&&(Je(e,"play",a=>{Ht(t.media,a,s=>s.paused),t.onStart?.(a)}),Je(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&Je(n,"connect",a=>{const s=a.context;s instanceof r&&(Ht(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function sn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function ln(){let t=null;const e=()=>t??parent,r=n=>t?n===t:sn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function cn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var un=500,fn=2e4,dn="data-token-reads",hn="data-frame-refused-watch",pn="data-frame-unsupported",mn=/(?:^|\s)stylesheet(?:\s|$)/i;function vn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&mn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function _n(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(hn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},O=h=>h.ok||h.status===304;let w=!1,b=!1;const m=()=>removeEventListener("error",M,!0),R=async h=>{const p=await s(h,d);if(O(p))b=!0;else if(p.status===403){const D=await s(a,d);if(O(D)){const _=(await s(h,d)).status;_===403?(b=!0,document.documentElement.setAttribute(pn,""),r()):_<500&&(b=!0)}else D.status>=400&&D.status<500&&(b=!0)}},M=h=>{if(b||w)return;if(document.documentElement.hasAttribute(dn)){b=!0,m();return}const p=vn(h.target,n);p&&(w=!0,c(()=>{R(p).catch(()=>{}).finally(()=>{w=!1,b&&m()})},un))};addEventListener("error",M,!0),addEventListener("load",m,{once:!0}),c(m,fn)}var Qe="__frame_scroll",yn=150,gn=310,wn=160,bn=3e4;function En(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=_=>{try{sessionStorage.setItem(Qe,JSON.stringify({y:_}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const _=s;s=null,c(_)},O=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,yn)};try{addEventListener("scroll",O,{passive:!0}),addEventListener("pagehide",d)}catch{}const w=()=>{let _;try{_=sessionStorage.getItem(Qe)}catch{return null}if(_===null)return null;let C;try{C=JSON.parse(_)}catch{C=null}const P=C?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(Qe)}catch{}return null}return P};let b=!1;const m=_=>{try{const C=scrollY;scrollTo({top:_,left:0,behavior:"instant"}),a=_,n=!0,clearTimeout(t),s=null,c(_);const P=scrollY;P!==C&&(e=!0),P!==_&&!b&&(b=!0,addEventListener("load",()=>{try{if(scrollY===P){const x=w();m(x!==null?x:a)}}catch{}},{once:!0}))}catch{}},R=()=>{try{return!!location.hash}catch{return!0}};let M=!1;const h=()=>{try{if(M||innerWidth>gn||innerHeight>wn)return;M=!0;const _=Date.now(),C=()=>{try{removeEventListener("resize",C)}catch{}if(Date.now()-_>bn||r||R())return;const P=w();m(P!==null?P:a)};addEventListener("resize",C)}catch{}};let p=!1,D=!1;return{restore(){if(p||(p=!0,R()))return;const _=w();_!==null&&(m(_),h())},promoted(){if(D||(D=!0,R()))return;const _=w();_!==null?(m(_),h()):n&&m(a)}}}function Sn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:O=>O})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(O=>O?.bootTopLevel?O.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Vn="modulepreload",Xn=function(t){return"/"+t},Yn={},An=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},kn=window===top,qt=Object.getOwnPropertyDescriptor(window,"claude"),Ie=en(kn,window.__FRAME_PREAMBLE?.topLevel,qt?.writable===!1),et=typeof Ie=="object"&&Ie[0],N=et?cn():ln();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&Ie==="framed")try{N.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Bt=1e4,Rn=2e3,tt=2e3,rt=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Ut(t){for(const e of rt)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Se=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ae=window.__FRAME_PREAMBLE?.transforms,nt=window.__FRAME_PREAMBLE?.comments,ot=window.__FRAME_PREAMBLE?.translate,ke=window.__FRAME_PREAMBLE?.ldx,at=sr(window.__FRAME_PREAMBLE?.cred);function Kt(t){return An(()=>import("/_runtime/"+t),void 0)}var Re=new Set,Gt=setTimeout,Tn=fetch,Ln=AbortController,On=800+800*Math.random(),Mn=3e3,De=null,zt=new Map;function Pn(t,e){let r=zt.get(t);return r||zt.set(t,r=Nn(t,e)),r}function Nn(t,e){if(De?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new Ln;let n=!1;return Gt(()=>{n=!0,r.abort()},Mn),Tn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":De?.has(t)?"csp":"net")}function ue(t){if(!De){const e=De=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Kt(t).catch(()=>new Promise(e=>Gt(e,On)).then(()=>Kt(t+"?r=1")).then(e=>(e!==void 0&&Re.add(t),e)))}function $t(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:ft,hooks:xe,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var pe=null,$=null;function Wt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var st=!1,xe={editBefore:null,edit:null};function Cn(t,e,r=!1){const n=[];let a;if(r)try{xe.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!fr(d)||dr(c,d))){a=s.target;break}if(s.text!==void 0&&(!vr(c)||wr(c))){a=s.target;break}for(const[d,O]of Object.entries(s.attrsSet??{}))if(!Xt(c,d)){try{c.setAttribute(d,O)}catch{}Vt(c,d,O)}for(const d of s.attrsRemoved??[])Xt(c,d)||(c.removeAttribute(d),Vt(c,d,null));typeof s.text=="string"&&yr(c,s.text),n.push(s.target)}if(r)try{xe.edit?.(t.seq,n,a)}catch{}if(a!==void 0){N.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Vt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Xt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Yt(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,st=!0):st&&(delete e.dataset.theme,e.style.colorScheme="",st=!1)}var fe=new Map,it=null;function lt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function He(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ct(t,e){for(const[r,n]of fe)n.done||(e&&n.asked?e(r,n):He(n,t))}var jn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),ut=!1,ft=(t,e)=>{let r=fe.get(t);if(r?.nulled&&ut)r=lt(),fe.set(t,r);else if(!r||r.done){r?.nulled&&$&&N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},$);return}const n=typeof e=="function"?Object.setPrototypeOf(e,jn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function Jt(){const t=qt?.value??{};Wt(window,"claude",t);for(const e of Object.keys(Se)){if(t[e]!==void 0){Wt(t,e,t[e]);continue}fe.set(e,lt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Se,r))return Promise.resolve(null);let n=fe.get(r);return n?(it&&(n.nulled||n.want!==void 0)&&(n=it(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(Ie==="framed"){let t;const e=Ae&&ce.test(Ae)?ue(Ae).catch(l=>{t={f:Ae,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const v=l.target,E=v&&v.closest?v.closest("a[href],area[href]"):null;if(!E)return;const I=E.getAttribute("href");if(!I)return;let j;try{j=new URL(I,document.baseURI)}catch{return}if((j.protocol==="http:"||j.protocol==="https:")&&j.origin!==location.origin){l.preventDefault();const L=(E.getAttribute("target")??"").toLowerCase(),K=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(L);N.post({__frame_nav:!0,url:j.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const O=an();e.then(l=>l?.installEscapeForward?.(c,v=>{$&&N.post(v,$)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const v=N.port("*");l.wireNav(v),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,v,O)});let w=null;try{w=En()}catch{}const b=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,R=null;try{R=Ir(window.name),m=Ct(null,R)}catch{}const M=Jt();let h=null;try{h=rn(M,m,{post:(l,v)=>N.post(l,v),dcl:b},R)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const D=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!ke&&ce.test(ke)&&document.querySelector("script#an-form")!==null;try{h?.hydration(D,Dr)}catch{}let _=null,C=0;const P=N.on((l,v,E,I)=>{Ut(v)&&Ar(l)&&(I(),p=l.__frame_init,$=v,P(),clearTimeout(C),_?.())});if(at)for(const l of rt)try{l.endsWith(":*")||N.post({__frame_cred:at},l)}catch{}N.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const x=setTimeout,W=clearTimeout;let J=()=>NaN,X=()=>[];try{J=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Te=0;const Le=()=>{try{N.post({__frame_alive:!0},"*")}catch{}Te=x(Le,Rn)},Oe=()=>W(Te);Le(),addEventListener("load",Oe,{once:!0});const H=new Promise(l=>{_=l,C=setTimeout(()=>{P(),l()},Bt)}),me=new WeakSet;addEventListener("error",l=>{l.target&&me.add(l.target)},!0);try{_n(jt(),at,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const qe=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(E=>!E.sheet&&!E.disabled&&!me.has(E)&&E.getAttribute("href")&&URL.canParse(E.href)&&(!E.media||matchMedia(E.media).matches))}catch{}let v=l.length;return v===0?Promise.resolve():new Promise(E=>{try{const I=tt-J(),j=x(E,I>0?I<tt?I:tt:0),L=()=>{--v===0&&(W(j),E())};for(const K of l)K.addEventListener("load",L,{once:!0}),K.addEventListener("error",L,{once:!0})}catch{E()}})};b.then(()=>{try{w?.restore()}catch{}}),Promise.all([H,b,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!$)return;let v=!1;try{v=l?.declaresCover?.()===!0}catch{}N.post({__frame_layout:{cover:v}},$)});const oe={cb:null};N.on((l,v)=>{if(Ut(v)&&kr(l)){try{w?.promoted()}catch{}oe.cb?.()}}),H.then(async()=>{if(!p||!$){ct();try{h?.onNoInit()}catch{}return}if(Yt(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,O)),p.hostKeys!==void 0){const i=$,g=p.hostKeys;e.then(y=>y?.installHostKeyForward?.(d,g,k=>N.post(k,i)))}try{h?.onInit(p.hot,$)}catch{}const l=$,v=N.port(l),E=(i,g)=>N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:g}},l),I=(i,g,y)=>{new Promise(k=>k(Pn(g,y))).then(k=>E(i,k),()=>E(i))},j=i=>N.post({__frame_cap_recovered:{cap:i}},l);let L=p.brokerGen;const K=()=>h?.boot.ver??"",Me=K(),Z=(i,g)=>{const y=K();W(g.t),g.want=y,g.t=x(()=>{g.done||He(g,y)},Bt),N.post({__frame_cap_want:!0,cap:i,ver:y},l)},Be=(i,g)=>{const y=fe.get(i.cap),k=Se[i.cap];if(!g||!y||y.done||y.want!==i.ver||!ce.test(k))return;if(W(y.t),y.want=void 0,L=i.brokerGen??L,i.ver!==K()){Z(i.cap,y);return}if(!i.grant||i.cap==="network"){He(y,i.ver);return}const Q=pe,G=pe={...Q,capabilities:{...Q.capabilities,[i.cap]:i.grant},capBudgets:{...Q.capBudgets,[i.cap]:{...Q.capBudgets[i.cap],...i.budgets}}};ue(k).then(ee=>{Re.has(k)&&j(i.cap),G.brokerGen=L,ut=!0;try{ee?.install?.(G)}catch{E(i.cap,"install")}finally{ut=!1}},ee=>I(i.cap,k,ee)).then(()=>{y.done||He(y,i.ver)})};let ae=!1,de=!1;N.on((i,g,y)=>{if(g!==l)return;try{if(h?.onShell(i))return}catch{}if(Tr(i)&&Yt(i.__frame_theme.theme),Xr(i)&&Be(i,y),y&&Yr(i)&&(L=i.brokerGen??L),Rr(i)){const G=i.__frame_host_visible.visible;e.then(ee=>ee?.applyHostVisible?.(G,O))}Sr(i)&&Cn(i.__frame_patch,l,y);const k=i?.__fc_mode;k&&typeof k=="object"&&!ae&&nt&&ce.test(nt)&&(ae=!0,ue(nt).then(G=>G.install?.(l,k.on===!0,v)).catch(()=>{}));const Q=i?.__ft_cmd;Q&&typeof Q=="object"&&!de&&ot&&ce.test(ot)&&(de=!0,ue(ot).then(G=>G.install?.(l,Q,v)).catch(()=>{}))});const Pe=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Se,i)).map(i=>[i,Se[i]]).filter(i=>typeof i[1]=="string"&&ce.test(i[1])),V=await Promise.allSettled(Pe.map(([,i])=>ue(i))),se=await e,B=l;if(se?.buildBoot||(t?I("_transforms",t.f,t.e):E("_transforms")),se?.buildBoot)try{pe=se.buildBoot(p,se.TRANSFORMS??{},{shellOrigin:B,mount:ft,hooks:xe,shell:v},i=>N.post({__frame_cap_telemetry:i},B))}catch{E("_transforms","install"),pe=$t(p,B,v)}else pe=$t(p,B,v);se?.buildBoot&&Re.has(Ae??"")&&j("_transforms");const ve=pe;ve.brokerGen=L,V.forEach((i,g)=>{const[y,k]=Pe[g];if(i.status!=="fulfilled"){I(y,k,i.reason);return}Re.has(k)&&j(y);try{i.value?.install?.(ve)}catch{E(y,"install")}});const Ne=p.capWants===!0;Ne&&(it=(i,g)=>{const y=K();if(!y)return g;if(!g.nulled)return g.want!==y&&Z(i,g),g;if(y===g.ver)return g;const k=lt();return fe.set(i,k),Z(i,k),k}),ct(Me,Ne&&K()!==Me?Z:void 0),await b,await qe(),Oe();const ie=ir(X,J);N.post(ie?{__frame_ready:!0,nav:ie}:{__frame_ready:!0},$),e.then(i=>{i?.installSizeReporter?.(B,oe,v),i?.installPaintReporter?.(v)});let Ce=!1;try{Ce=D()}catch{}ke&&Ce?ue(ke).then(i=>i?.boot?.({shellOrigin:l,build:ve.flags.has(nn),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?E("_ldx"):Re.has(ke)&&j("_ldx")}):h?.hydrated()})}else et&&(Jt(),Sn(et,rt,ue,{settle:ct,mount:ft}))})();</script><!-- /frame-runtime -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para vos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2" rel="stylesheet">
+<style>
+  :root {
+    --bg-1: #FBF4E4;
+    --bg-2: #F5EAD0;
+    --gold: #C39A45;
+    --gold-soft: #E4C784;
+    --ink: #4A3B24;
+    --ink-soft: #8A7550;
+    --petal: #F6C543;
+    --petal-deep: #E3A431;
+    --petal-light: #FBDA82;
+    --flower-center: #7A4A22;
+    --leaf: #6E8F4E;
+    --leaf-dark: #4F6E38;
+    --stem: #5C7A3E;
+    --soil-1: #9A7A50;
+    --soil-2: #6E4F30;
+    --paper: #FFFCF4;
+    --shadow: rgba(110, 79, 33, 0.18);
+    --overlay: 18, 13, 6;
+    color-scheme: light;
+  }
+
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg-1: #221a10;
+      --bg-2: #2a2013;
+      --ink: #F3E6C8;
+      --ink-soft: #C9B48A;
+      --paper: #2c2314;
+      --shadow: rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg-1: #221a10;
+    --bg-2: #2a2013;
+    --ink: #F3E6C8;
+    --ink-soft: #C9B48A;
+    --paper: #2c2314;
+    --shadow: rgba(0, 0, 0, 0.45);
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, var(--bg-2), var(--bg-1) 70%);
+    color: var(--ink);
+    min-height: 100%;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  h1, h2, .serif {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  button {
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+  }
+
+  /* ---------- decorative background dots ---------- */
+  .bg-dots {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      radial-gradient(circle, var(--gold-soft) 1px, transparent 1.4px),
+      radial-gradient(circle, var(--gold-soft) 1px, transparent 1.4px);
+    background-size: 90px 90px, 140px 140px;
+    background-position: 10px 20px, 60px 90px;
+    opacity: 0.25;
+  }
+
+  /* ---------- main scene ---------- */
+  .scene {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: clamp(28px, 7vh, 64px) 22px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .messages { max-width: 360px; }
+
+  .title-text {
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    font-style: italic;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    transition: opacity 0.5s ease;
+  }
+
+  .sub-text {
+    margin-top: 10px;
+    font-size: clamp(0.92rem, 2.6vw, 1.02rem);
+    color: var(--ink-soft);
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    transition: opacity 0.5s ease;
+  }
+
+  .fade-swap { opacity: 0; }
+
+  /* ---------- grow stage ---------- */
+  .grow-stage {
+    position: relative;
+    width: min(72vw, 250px);
+    height: min(72vw, 250px);
+    margin: clamp(18px, 4vh, 34px) 0 6px;
+  }
+
+  .plant-svg { width: 100%; height: 100%; overflow: visible; }
+
+  .soil {
+    fill: var(--soil-1);
+    transition: transform 0.35s ease;
+    transform-origin: 100px 235px;
+  }
+  .soil-shade { fill: var(--soil-2); opacity: 0.55; }
+
+  .soil.pulse { transform: scaleX(1.04) scaleY(1.1); }
+
+  .seed {
+    fill: var(--flower-center);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform-origin: 100px 226px;
+  }
+  .seed.hide { opacity: 0; transform: scale(0.3); }
+
+  .stem {
+    fill: none;
+    stroke: var(--stem);
+    stroke-width: 3.4;
+    stroke-linecap: round;
+  }
+
+  .leaf { fill: var(--leaf); opacity: 0; transform: scale(0.15); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.3,1.4,.5,1); }
+  .leaf-left  { transform-origin: 100px 196px; transition-delay: 0.05s; fill: var(--leaf); }
+  .leaf-right { transform-origin: 100px 178px; transition-delay: 0.22s; fill: var(--leaf-dark); }
+  .leaves.show .leaf { opacity: 1; transform: scale(1); }
+
+  .flower-group { transform: translate(100px,120px) scale(0.001); transition: transform 0.55s cubic-bezier(.34,1.5,.5,1); transform-origin: 100px 120px; }
+  .flower-group.bloom { transform: translate(100px,120px) scale(1); }
+
+  .petal { transform: rotate(calc(var(--i) * 45deg)) scale(0); transform-origin: 0 0; transition: transform 0.5s cubic-bezier(.3,1.6,.4,1); transition-delay: calc(var(--i) * 45ms); }
+  .flower-group.bloom .petal { transform: rotate(calc(var(--i) * 45deg)) scale(1); }
+  .petal path { fill: var(--petal); }
+  .petal:nth-child(odd) path { fill: var(--petal-deep); }
+
+  .flower-center-dot { fill: var(--flower-center); opacity: 0; transform: scale(0); transition: opacity .4s ease .4s, transform .4s cubic-bezier(.3,1.6,.4,1) .4s; transform-origin: 0 0; }
+  .flower-group.bloom .flower-center-dot { opacity: 1; transform: scale(1); }
+
+  .flower-group.leaving { transition: opacity 0.5s ease, transform 0.6s ease; opacity: 0; transform: translate(100px,120px) scale(0.5) translateY(-10px); }
+
+  /* rain */
+  .rain-layer { position: absolute; inset: 0; pointer-events: none; }
+  .drop {
+    position: absolute;
+    top: -10%;
+    width: 3px;
+    height: 14px;
+    border-radius: 3px;
+    background: linear-gradient(var(--gold-soft), var(--gold));
+    opacity: 0.9;
+    animation: fall 0.65s ease-in forwards;
+  }
+  @keyframes fall {
+    0% { transform: translateY(0); opacity: 0.95; }
+    85% { opacity: 0.9; }
+    100% { transform: translateY(150px); opacity: 0; }
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 6px; height: 6px;
+    background: var(--gold-soft);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    animation: spark 0.75s ease-out forwards;
+    pointer-events: none;
+  }
+  @keyframes spark {
+    0% { opacity: 1; transform: translate(-50%,-50%) scale(0.4) translate(0,0); }
+    100% { opacity: 0; transform: translate(-50%,-50%) scale(1) translate(var(--sx), var(--sy)); }
+  }
+
+  /* ---------- button ---------- */
+  .water-btn {
+    margin-top: clamp(8px, 3vh, 22px);
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--ink);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 0.98rem;
+    letter-spacing: 0.4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.35s ease, color 0.35s ease, transform 0.2s ease, box-shadow .3s ease;
+  }
+  .water-btn:hover { background: var(--gold); color: var(--paper); box-shadow: 0 8px 22px var(--shadow); }
+  .water-btn:active { transform: scale(0.97); }
+  .water-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .water-btn[disabled] { opacity: 0.45; pointer-events: none; }
+  .water-btn.hidden { opacity: 0; pointer-events: none; height: 0; margin: 0; overflow: hidden; }
+
+  /* ---------- bouquet dock ---------- */
+  .bouquet-dock {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    height: 90px;
+    margin-top: auto;
+    padding-top: 18px;
+  }
+  .bouquet-dock::before {
+    content: "";
+    position: absolute;
+    left: 50%; bottom: 8px;
+    width: 70%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+    transform: translateX(-50%);
+  }
+
+  .dock-flower {
+    position: absolute;
+    left: 50%; bottom: 6px;
+    width: 46px; height: 46px;
+    transform: translate(-50%, 0) rotate(0deg) scale(0.4);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(.3,1.5,.4,1);
+  }
+  .dock-flower.settled { opacity: 1; }
+
+  /* flying flower */
+  .flying-flower {
+    position: fixed;
+    width: 40px; height: 40px;
+    z-index: 40;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9) rotate(0deg);
+    opacity: 0.95;
+    transition: left 1.05s cubic-bezier(.5,0,.25,1), top 1.05s cubic-bezier(.5,0,.25,1), transform 1.05s cubic-bezier(.5,0,.25,1), opacity 0.9s ease;
+  }
+
+  /* ---------- final screen ---------- */
+  .final-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: calc(env(safe-area-inset-top,0px) + 40px) 20px calc(env(safe-area-inset-bottom,0px) + 40px);
+    background: radial-gradient(ellipse at 50% 30%, rgba(60,44,18,0.94), rgba(var(--overlay),0.97) 75%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s ease;
+    overflow-y: auto;
+  }
+  .final-screen.active { opacity: 1; visibility: visible; }
+
+  .petals-float { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .petal-float {
+    position: absolute;
+    top: -8%;
+    left: var(--x);
+    width: var(--size);
+    height: calc(var(--size) * 0.75);
+    background: var(--petal);
+    border-radius: 100% 0 100% 0;
+    opacity: 0.85;
+    animation: drift var(--dur) linear var(--delay) infinite;
+  }
+  .petal-float:nth-child(3n) { background: var(--petal-deep); }
+  .petal-float:nth-child(4n) { background: var(--petal-light); }
+  @keyframes drift {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    50%  { transform: translate(var(--drift), 55vh) rotate(180deg); }
+    100% { transform: translate(0, 112vh) rotate(360deg); }
+  }
+
+  .final-bouquet {
+    position: relative;
+    width: 260px;
+    height: 220px;
+    margin-top: 12px;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+    transition: opacity 1s ease 0.15s, transform 1.1s cubic-bezier(.3,1.2,.4,1) 0.15s;
+  }
+  .final-screen.active .final-bouquet { opacity: 1; transform: translateY(0) scale(1); }
+  .final-bouquet.sway { animation: sway 4.5s ease-in-out infinite; }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-1.1deg); }
+    50% { transform: rotate(1.1deg); }
+  }
+
+  .final-flower {
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 78px; height: 78px;
+    transform-origin: center;
+  }
+
+  .stem-line {
+    position: absolute;
+    left: 50%; top: 46%;
+    width: 2px;
+    background: linear-gradient(var(--stem), var(--leaf-dark));
+    transform-origin: top center;
+    border-radius: 2px;
+  }
+
+  .ribbon {
+    position: absolute;
+    left: 50%; bottom: 6px;
+    transform: translateX(-50%);
+  }
+
+  .letter {
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 18px;
+    max-width: 380px;
+    width: 100%;
+    margin-top: 26px;
+    padding: 30px 26px 26px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.9s ease 0.5s, transform 0.9s cubic-bezier(.3,1.1,.4,1) 0.5s;
+    flex-shrink: 0;
+  }
+  .final-screen.active .letter { opacity: 1; transform: translateY(0); }
+
+  .letter p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.28rem;
+    font-style: italic;
+    line-height: 1.55;
+    margin: 0 0 22px;
+    white-space: pre-line;
+  }
+
+  .more-btn {
+    border: none;
+    background: var(--gold);
+    color: var(--paper);
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-size: 0.94rem;
+    letter-spacing: 0.3px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  .more-btn:hover { box-shadow: 0 10px 24px rgba(0,0,0,0.25); transform: translateY(-1px); }
+  .more-btn:focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
+
+  /* ---------- secret screen ---------- */
+  .secret-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(env(safe-area-inset-top,0px) + 20px) 20px calc(env(safe-area-inset-bottom,0px) + 20px);
+    background: radial-gradient(ellipse at 50% 30%, rgba(60,44,18,0.94), rgba(var(--overlay),0.97) 75%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease;
+  }
+  .secret-screen.active { opacity: 1; visibility: visible; }
+
+  .secret-card {
+    background: var(--paper);
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 28px 28px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    transform: translateY(10px);
+    opacity: 0;
+    transition: opacity 0.8s ease 0.1s, transform 0.8s cubic-bezier(.3,1.1,.4,1) 0.1s;
+  }
+  .secret-screen.active .secret-card { opacity: 1; transform: translateY(0); }
+
+  .photo-frame {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--bg-2), var(--gold-soft));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid var(--gold-soft);
+  }
+  .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo-frame svg { width: 40%; opacity: 0.55; }
+
+  .secret-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.22rem;
+    font-style: italic;
+    line-height: 1.55;
+    margin: 0 0 22px;
+    white-space: pre-line;
+  }
+
+  .back-btn {
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--ink);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .back-btn:hover { background: var(--gold); color: var(--paper); }
+  .back-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  @media (max-width: 360px) {
+    .letter, .secret-card { padding: 24px 18px 22px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.2s !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-dots" aria-hidden="true"></div>
+
+<main class="scene" id="scene">
+  <div class="messages">
+    <h1 class="title-text" id="titleText">Esto es un regalito para vos🎁</h1>
+    <p class="sub-text" id="subText">Apreta regar para que crezcan las flores</p>
+  </div>
+
+  <div class="grow-stage">
+    <div class="rain-layer" id="rainLayer" aria-hidden="true"></div>
+    <svg class="plant-svg" id="plantSvg" viewBox="0 0 200 260" aria-hidden="true">
+      <ellipse class="soil" id="soilShape" cx="100" cy="235" rx="66" ry="15"></ellipse>
+      <ellipse class="soil soil-shade" cx="108" cy="238" rx="52" ry="10"></ellipse>
+
+      <path class="stem" id="stemPath" d="M100,230 L100,120" style="stroke-dasharray: 110; stroke-dashoffset: 110; transition: none;"></path>
+
+      <g class="leaves" id="leavesGroup">
+        <path class="leaf leaf-left" d="M100,196 C78,191 62,175 67,153 C89,163 100,180 100,196 Z"></path>
+        <path class="leaf leaf-right" d="M100,178 C122,171 136,152 130,131 C110,144 100,161 100,178 Z"></path>
+      </g>
+
+      <circle class="seed" id="seedDot" cx="100" cy="226" r="5.5"></circle>
+
+      <g class="flower-group" id="flowerGroup">
+        <g class="petals" id="petalsGroup"><g class="petal" style="--i: 0;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 1;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 2;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 3;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 4;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 5;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 6;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g><g class="petal" style="--i: 7;"><path d="M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z"></path></g></g>
+        <circle class="flower-center-dot" r="9"></circle>
+      </g>
+    </svg>
+  </div>
+
+  <button class="water-btn" id="waterBtn" type="button">Regar <span aria-hidden="true">🌧️</span></button>
+
+  <div class="bouquet-dock" id="bouquetDock" aria-hidden="true"></div>
+</main>
+
+<div class="final-screen" id="finalScreen">
+  <div class="petals-float" id="petalsFloat" aria-hidden="true"></div>
+
+  <div class="final-bouquet sway" id="finalBouquet" aria-hidden="true"></div>
+
+  <div class="letter">
+    <p>💛Estas flores son para vos gordi 💛
+Quería regalarte algo que no se marchitara,
+así que hice este pequeño ramo para vos. 
+Que regamos juntos con cada recuerdo 
+y momento vivido.
+Espero que cada vez que lo veas
+te acuerdes de cuánto te amo Julia.</p>
+    <button class="more-btn" id="moreBtn" type="button">Hay algo más… 💌</button>
+  </div>
+</div>
+
+<div class="secret-screen" id="secretScreen">
+  <div class="secret-card">
+    <div class="photo-frame" id="photoFrame">
+      <img src="nos.jpg" alt="Nosotros">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21C12 21 4 15.5 4 9.8C4 6.6 6.4 4.5 9 4.5C10.5 4.5 11.6 5.2 12 6.1C12.4 5.2 13.5 4.5 15 4.5C17.6 4.5 20 6.6 20 9.8C20 15.5 12 21 12 21Z" stroke="#7A4A22" stroke-width="1.4" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <p id="secretMessage">Gracias por ser mi lugar favorito.
+Cada día contigo se siente como este ramo:
+algo que se construye de a poco,
+con cuidado, y que vale la pena esperar.
+Te amo, Owen 💛</p>
+    <button class="back-btn" id="backBtn" type="button">Volver</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------- helpers ----------
+  function el(tag, cls) {
+    var e = document.createElement("div");
+    if (cls) e.className = cls;
+    return e;
+  }
+
+  function petalPathD() {
+    return "M0,-2 C-9,-13 -7,-29 0,-33 C7,-29 9,-13 0,-2 Z";
+  }
+
+  // build the 8 petals for the main SVG flower
+  var petalsGroup = document.getElementById("petalsGroup");
+  for (var i = 0; i < 8; i++) {
+    var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    g.setAttribute("class", "petal");
+    g.style.setProperty("--i", i);
+    var p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", petalPathD());
+    g.appendChild(p);
+    petalsGroup.appendChild(g);
+  }
+
+  // small flower SVG markup used in the dock, flying flower and final bouquet
+  function flowerSVG(hueClass) {
+    var petals = "";
+    for (var i = 0; i < 8; i++) {
+      var fill = (i % 2 === 0) ? "var(--petal)" : "var(--petal-deep)";
+      petals += '<g transform="rotate(' + (i * 45) + ')"><path d="' + petalPathD() + '" fill="' + fill + '"/></g>';
+    }
+    return '<svg viewBox="-34 -34 68 68" width="100%" height="100%">' +
+      '<g>' + petals + '</g>' +
+      '<circle r="8.5" fill="var(--flower-center)"/>' +
+      '</svg>';
+  }
+
+  // ---------- state ----------
+  var waterBtn = document.getElementById("waterBtn");
+  var titleText = document.getElementById("titleText");
+  var subText = document.getElementById("subText");
+  var soilShape = document.getElementById("soilShape");
+  var seedDot = document.getElementById("seedDot");
+  var stemPath = document.getElementById("stemPath");
+  var leavesGroup = document.getElementById("leavesGroup");
+  var flowerGroup = document.getElementById("flowerGroup");
+  var rainLayer = document.getElementById("rainLayer");
+  var growStage = document.querySelector(".grow-stage");
+  var bouquetDock = document.getElementById("bouquetDock");
+  var scene = document.getElementById("scene");
+  var finalScreen = document.getElementById("finalScreen");
+  var finalBouquet = document.getElementById("finalBouquet");
+  var petalsFloat = document.getElementById("petalsFloat");
+  var moreBtn = document.getElementById("moreBtn");
+  var secretScreen = document.getElementById("secretScreen");
+  var backBtn = document.getElementById("backBtn");
+
+  var TOTAL = 5;
+  var count = 0;
+  var busy = false;
+
+  // stem dash setup
+  var stemLen = stemPath.getTotalLength();
+  stemPath.style.strokeDasharray = stemLen;
+  stemPath.style.strokeDashoffset = stemLen;
+  stemPath.style.transition = "none";
+
+  // slot offsets for a natural-looking bouquet (x, y, rotation, scale)
+  var SLOTS = [
+    { x: -58, y: 6,  rot: -14, scale: 0.92 },
+    { x: -26, y: -14, rot: 6,  scale: 1.05 },
+    { x: 6,   y: 4,  rot: -4, scale: 1.0  },
+    { x: 34,  y: -10, rot: 12, scale: 0.98 },
+    { x: 62,  y: 8,  rot: -8, scale: 0.9  }
+  ];
+
+  function setMessage(title, sub) {
+    titleText.classList.add("fade-swap");
+    subText.classList.add("fade-swap");
+    setTimeout(function () {
+      titleText.textContent = title;
+      subText.textContent = sub;
+      titleText.classList.remove("fade-swap");
+      subText.classList.remove("fade-swap");
+    }, 420);
+  }
+
+  function spawnRain() {
+    for (var i = 0; i < 6; i++) {
+      (function (idx) {
+        setTimeout(function () {
+          var d = el("div", "drop");
+          d.style.left = (38 + Math.random() * 24) + "%";
+          d.style.animationDuration = (0.55 + Math.random() * 0.25) + "s";
+          rainLayer.appendChild(d);
+          setTimeout(function () { d.remove(); }, 900);
+        }, idx * 70);
+      })(i);
+    }
+    setTimeout(function () {
+      soilShape.classList.add("pulse");
+      setTimeout(function () { soilShape.classList.remove("pulse"); }, 350);
+    }, 450);
+  }
+
+  function sparkleBurst(x, y, parent) {
+    for (var i = 0; i < 6; i++) {
+      var s = el("div", "sparkle");
+      var angle = (Math.PI * 2 * i) / 6;
+      var dist = 18 + Math.random() * 10;
+      s.style.left = x + "px";
+      s.style.top = y + "px";
+      s.style.setProperty("--sx", Math.cos(angle) * dist + "px");
+      s.style.setProperty("--sy", Math.sin(angle) * dist + "px");
+      parent.appendChild(s);
+      setTimeout(function (node) { return function () { node.remove(); }; }(s), 800);
+    }
+  }
+
+  function growCycle() {
+    busy = true;
+    waterBtn.setAttribute("disabled", "true");
+
+    spawnRain();
+
+    // seed hides, stem grows
+    setTimeout(function () {
+      seedDot.classList.add("hide");
+      stemPath.style.transition = "stroke-dashoffset 0.9s cubic-bezier(.4,.2,.2,1)";
+      stemPath.style.strokeDashoffset = "0";
+    }, 500);
+
+    // leaves
+    setTimeout(function () {
+      leavesGroup.classList.add("show");
+    }, 1250);
+
+    // bloom
+    setTimeout(function () {
+      flowerGroup.classList.add("bloom");
+    }, 1750);
+
+    // detach + fly to bouquet
+    setTimeout(function () {
+      flyFlowerToBouquet();
+    }, 2750);
+  }
+
+  function flyFlowerToBouquet() {
+    var stageRect = growStage.getBoundingClientRect();
+    var startX = stageRect.left + stageRect.width * 0.5;
+    var startY = stageRect.top + stageRect.height * 0.46;
+
+    var dockRect = bouquetDock.getBoundingClientRect();
+    var slot = SLOTS[count % SLOTS.length];
+    var endX = dockRect.left + dockRect.width * 0.5 + slot.x;
+    var endY = dockRect.top + dockRect.height - 30 + slot.y;
+
+    var fly = el("div", "flying-flower");
+    fly.innerHTML = flowerSVG();
+    fly.style.left = startX + "px";
+    fly.style.top = startY + "px";
+    document.body.appendChild(fly);
+
+    // fade the plant's flower away in place
+    flowerGroup.classList.add("leaving");
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        fly.style.left = endX + "px";
+        fly.style.top = endY + "px";
+        fly.style.transform = "translate(-50%,-50%) scale(" + slot.scale + ") rotate(" + slot.rot + "deg)";
+      });
+    });
+
+    setTimeout(function () {
+      fly.remove();
+      landFlowerInDock(slot);
+      resetPlant();
+      count++;
+      afterFlowerLanded();
+    }, 1100);
+  }
+
+  function landFlowerInDock(slot) {
+    var dockRect = bouquetDock.getBoundingClientRect();
+    var f = el("div", "dock-flower");
+    f.innerHTML = flowerSVG();
+    f.style.transform = "translate(-50%,0) rotate(" + slot.rot + "deg) scale(" + slot.scale + ")";
+    f.style.marginLeft = slot.x + "px";
+    f.style.marginBottom = (-slot.y) + "px";
+    bouquetDock.appendChild(f);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { f.classList.add("settled"); });
+    });
+
+    var fr = f.getBoundingClientRect();
+    sparkleBurst(fr.left - dockRect.left + fr.width / 2, fr.top - dockRect.top + fr.height / 2, bouquetDock);
+  }
+
+  function resetPlant() {
+    flowerGroup.classList.remove("bloom", "leaving");
+    leavesGroup.classList.remove("show");
+    stemPath.style.transition = "none";
+    stemPath.style.strokeDashoffset = stemLen;
+    seedDot.classList.remove("hide");
+    // force reflow so next grow re-triggers transition
+    void stemPath.getBoundingClientRect();
+  }
+
+  function afterFlowerLanded() {
+    if (count === 2) {
+      setMessage("Ya tenemos algunas\u2026", "Un poco más y vas a ver.");
+    } else if (count === 4) {
+      setMessage("Pero siento que todavía falta algo.", "Una más, y listo.");
+    }
+
+    if (count >= TOTAL) {
+      waterBtn.classList.add("hidden");
+      setTimeout(function () {
+        setMessage("Ahora sí. 🌻", "Vení, quiero mostrarte algo.");
+      }, 500);
+      setTimeout(goToFinal, 2200);
+    } else {
+      busy = false;
+      waterBtn.removeAttribute("disabled");
+    }
+  }
+
+  waterBtn.addEventListener("click", function () {
+    if (busy || count >= TOTAL) return;
+    growCycle();
+  });
+
+  // ---------- final screen ----------
+  function buildFinalBouquet() {
+    finalBouquet.innerHTML = "";
+    SLOTS.forEach(function (slot, i) {
+      var stem = el("div", "stem-line");
+      var h = 92 - slot.y * 0.4;
+      stem.style.height = h + "px";
+      stem.style.marginLeft = (slot.x * 0.72) + "px";
+      finalBouquet.appendChild(stem);
+
+      var f = el("div", "final-flower");
+      f.innerHTML = flowerSVG();
+      f.style.marginLeft = (slot.x * 0.72 - 39) + "px";
+      f.style.marginTop = (slot.y * 0.5 - 39) + "px";
+      f.style.transform = "rotate(" + slot.rot + "deg) scale(" + slot.scale + ")";
+      finalBouquet.appendChild(f);
+    });
+
+    var ribbon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    ribbon.setAttribute("viewBox", "0 0 80 40");
+    ribbon.setAttribute("width", "80");
+    ribbon.setAttribute("height", "40");
+    ribbon.innerHTML = '<path d="M10,10 C25,0 30,20 40,12 C50,20 55,0 70,10 L60,28 C50,20 30,20 20,28 Z" fill="var(--petal-deep)" stroke="var(--gold)" stroke-width="1"/>';
+    var ribbonWrap = el("div", "ribbon");
+    ribbonWrap.appendChild(ribbon);
+    finalBouquet.appendChild(ribbonWrap);
+  }
+
+  function buildPetalsFloat() {
+    petalsFloat.innerHTML = "";
+    var n = 16;
+    for (var i = 0; i < n; i++) {
+      var p = el("div", "petal-float");
+      p.style.setProperty("--x", Math.random() * 100 + "%");
+      p.style.setProperty("--size", (8 + Math.random() * 10) + "px");
+      p.style.setProperty("--dur", (7 + Math.random() * 6) + "s");
+      p.style.setProperty("--delay", (Math.random() * 6) + "s");
+      p.style.setProperty("--drift", (Math.random() * 60 - 30) + "px");
+      petalsFloat.appendChild(p);
+    }
+  }
+
+  function goToFinal() {
+    buildFinalBouquet();
+    buildPetalsFloat();
+    finalScreen.classList.add("active");
+  }
+
+  moreBtn.addEventListener("click", function () {
+    finalScreen.classList.remove("active");
+    setTimeout(function () { secretScreen.classList.add("active"); }, 350);
+  });
+
+  backBtn.addEventListener("click", function () {
+    secretScreen.classList.remove("active");
+    setTimeout(function () { finalScreen.classList.add("active"); }, 350);
+  });
+})();
+</script>
+
+
+</body></html>
